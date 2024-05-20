@@ -1,0 +1,35 @@
+.container{
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.title{
+    padding-left: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.close{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+}
+
+.modal_container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.big_title{
+    margin-top: 30px;
+    font-size: 40px;
+}

@@ -1,0 +1,24 @@
+.container{
+    padding: 50px;
+    margin-top: 30px;
+}
+
+.iwie{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.li{
+    background-color: #fff;
+    padding: 50px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    border-radius: 20px;
+}
+
+.imgdiv{
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+}

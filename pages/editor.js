@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Roboto } from "next/font/google";
 import Header from "@/components/ui/Header";
-import Homepage from "@/components/pages/Homepage";
+import RichTextEditor from "@/components/tools/RichTextEditor";
 
 const inter = Roboto({ subsets: ["latin"], weight: ["100", "300", "500", "700", "900"] });
 
@@ -19,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <Homepage />
+      <RichTextEditor />
     </>
   );
 }
