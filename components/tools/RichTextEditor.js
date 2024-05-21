@@ -6,7 +6,7 @@ import 'react-quill/dist/quill.snow.css';
 const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
 import classes from "./RichTextEditor.module.css"
 import Image from 'next/image';
-
+import { useRouter } from 'next/router';
 const RichTextEditor = ({ onSubmit }) => {
 
     const [links] = useState([
@@ -24,6 +24,8 @@ const RichTextEditor = ({ onSubmit }) => {
   const [selectedCategory, setSelectedCategory] = useState();
   const [image, setImage] = useState();
   const [imagePreview, setImagePreview] = useState('');
+
+    const router = useRouter();
 
   const handleChange = (value) => {
     setContent(value);
@@ -47,6 +49,7 @@ const RichTextEditor = ({ onSubmit }) => {
         })
         if(response.ok){
             const res = await response.json();
+            router.replace("/")
             console.log(res);
         }
         else {

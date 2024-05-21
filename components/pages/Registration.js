@@ -44,16 +44,6 @@ function Registration() {
                 })
             });
             if(response.ok){
-                /*
-                const contentType = response.headers.get("Content-Type");
-                if(contentType && contentType.includes("application/json")){
-                    const res = await response.json();
-                    console.log(res);
-                }
-                else {
-                    console.error("Error, " + response.status, response.statusText);
-                }
-                */
                 const res = await response.json();
                 console.log(res);
                 const form_element = e.target;
