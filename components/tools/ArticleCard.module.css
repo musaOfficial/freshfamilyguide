@@ -1,6 +1,9 @@
 .container{
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
     border-radius: 10px;
+    min-width: 400px;
+    min-height: 300px;
+    cursor: pointer;
 }
 
 .title{

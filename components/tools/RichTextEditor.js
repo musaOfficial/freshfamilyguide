@@ -12,10 +12,9 @@ const RichTextEditor = ({ onSubmit }) => {
     const [links] = useState([
         "Ernährung",
         "Schlaf",
-        "Sicherheit",
         "Hygiene",
-        "Lernspielzeuge",
-        "Unterhaltung für Kinder/Babies",
+        "Unterhaltung für Babies",
+        "Unterhaltung für Kinder",
     ]);
 
   const [step, setStep] = useState(0);  
